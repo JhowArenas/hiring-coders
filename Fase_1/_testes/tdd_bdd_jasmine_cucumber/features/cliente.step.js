@@ -28,3 +28,4 @@ Then("see the list of {string} items", async (string) => {
   assert.equal(qtd.length, parseInt(string));
   await driver.quit();
 });
+node_modules
