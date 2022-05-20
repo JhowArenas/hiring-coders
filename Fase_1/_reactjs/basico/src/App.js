@@ -1,8 +1,10 @@
 import React from "react";
-import ProjectRoutes from "./routes";
+import Rotas from "./routes";
 
 function App(props) {
-   <ProjectRoutes />
+   return <>
+      <Rotas />
+   </> 
 }
 
 export default App;

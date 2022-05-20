@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import axios from "axios";
 
-function App(props) {
+function Home(props) {
   const [usuario, setUsuario] = useState("");
 
   function handlePesquisa(user) {
@@ -31,4 +31,4 @@ function App(props) {
   );
 }
 
-export default App;
+export default Home;

@@ -1,16 +1,18 @@
 import React from "react";
-import { Switch , Route, BrowserRouter } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+  
 
-import Repositories from "./Repositories";
 import Home from "./Home";
+import Repositories from "./Repositories";
 
-export default function ProjectRoutes() {
+function Rotas() {
     return(
         <BrowserRouter>
-            <Switch>
-                <Route path="/" exact component={Home} />
-                <Route path="/repositories" component={Repositories} />
-            </Switch>
+            <Routes>s
+                <Route path="/" element={<Home title="Hola" user="Gama Academy" />} />
+                <Route path="/repositories" element={<Repositories/>} />
+            </Routes>
         </BrowserRouter>
     )
 }
+export default Rotas;
